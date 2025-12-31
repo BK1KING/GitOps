@@ -8,4 +8,5 @@ jobs:
         run: |
           echo "hi bharath" 
           echo "focus on GHA"
+          echo "Hello, ${{ vars.MY_NAME}}"
 
