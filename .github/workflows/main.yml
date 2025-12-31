@@ -9,4 +9,5 @@ jobs:
           echo "hi bharath" 
           echo "focus on GHA"
           echo "Hello, ${{ vars.MY_NAME}}"
+          echo "Docker password is, ${{ secrets.DOCKER_PASSWORD}}"
 
