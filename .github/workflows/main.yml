@@ -10,5 +10,5 @@ jobs:
           echo "focus on GHA"
           echo "Hello, ${{ vars.MY_NAME}}"
           echo "Docker password is, ${{ secrets.DOCKER_PASSWORD}}"
-          echo "User Secret is, ${{secret.USER_ID}}"
+          echo "User Secret is, ${{secrets.USER_ID}}"
 
