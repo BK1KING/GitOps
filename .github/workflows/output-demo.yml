@@ -11,7 +11,7 @@ jobs:
         run: |
           echo "version=0.0.1" >> $GITHUB_OUTPUT
           echo "Contents of \$GITHUB_OUTPUT:"
-          cat "$GITHUB_OUTPUT
+          cat "$GITHUB_OUTPUT"
         id: step1
   deploy:
     needs: build
