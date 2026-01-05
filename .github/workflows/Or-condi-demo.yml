@@ -1,0 +1,10 @@
+name: OR Demo
+on: 
+  push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run for Bk1king or bharath
+        if: github.actor == 'bharath' ||  github.actor == 'BK1KING' 
+        run: echo "Triggered by either bharath or BK1KING"
