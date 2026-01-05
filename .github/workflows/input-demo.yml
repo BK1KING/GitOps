@@ -14,9 +14,9 @@ on:
       artifact_tag:
         description: Choose git tag to deploy
         required: true
-  jobs:
-    inputs-demo:
-      runs_on: ubuntu-latest
+jobs:
+  inputs-demo:
+    runs_on: ubuntu-latest
       steps:
         - name: Deploy the app
           run: echo "Deploy the application to ${{inputs.environment}}"
