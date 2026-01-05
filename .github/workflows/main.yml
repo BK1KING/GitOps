@@ -1,5 +1,5 @@
 name: HelloWorld
-on: push
+# on: push
 jobs:
   hello:
     runs-on: ubuntu-latest
