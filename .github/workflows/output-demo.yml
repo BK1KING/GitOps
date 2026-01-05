@@ -8,8 +8,10 @@ jobs:
       version: ${{steps.step1.outputs.version}}
     steps:
       - name: Build step
-        run: echo "version=0.0.1" >> $GITHUB_OUTPUT
-        id: step1
+        run: |
+          echo "version=0.0.1" >> $GITHUB_OUTPUT
+          cat $GITHUB_OUTPUT        
+          id: step1
   deploy:
     needs: build
     runs-on: ubuntu-latest
