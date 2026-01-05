@@ -17,10 +17,10 @@ on:
 jobs:
   inputs-demo:
     runs_on: ubuntu-latest
-      steps:
-        - name: Deploy the app
-          run: echo "Deploy the application to ${{inputs.environment}}"
-          run: echo "Deploying the artifact ${{inputs.artifact_tag}} of the application to ${{ inputs.environment}}"
+    steps:
+      - name: Deploy the app
+        run: echo "Deploy the application to ${{inputs.environment}}"
+        run: echo "Deploying the artifact ${{inputs.artifact_tag}} of the application to ${{ inputs.environment}}"
           
 
         
